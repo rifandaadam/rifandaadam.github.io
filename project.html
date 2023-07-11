@@ -1,16 +1,43 @@
 <script>
   $(document).ready(function() {
     $('.gallery-img').on('click', function() {
-      $(this).toggleClass('zoomed');
+      var imageUrl = $(this).attr('src');
+      var imageAlt = $(this).attr('alt');
+      var popupContent = '<img src="' + imageUrl + '" alt="' + imageAlt + '" class="popup-img">';
+      $('.popup').html(popupContent).fadeIn();
+    });
+
+    $('.popup').on('click', function() {
+      $(this).fadeOut();
     });
   });
 </script>
+
 <style>
   .gallery-img {
     max-width: 100%;
     height: auto;
   }
+
+  .popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 9999;
+    text-align: center;
+    padding-top: 10%;
+  }
+
+  .popup-img {
+    max-width: 90%;
+    max-height: 90%;
+  }
 </style>
+
 <div id="project" class="container custom-content animated lightSpeedIn">
   <div class="col-12" style="margin-top: 15%">
     <div class="right">
@@ -42,3 +69,5 @@
     </div>
   </div>
 </div>
+
+<div class="popup"></div>
