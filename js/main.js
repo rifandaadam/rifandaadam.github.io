@@ -25,6 +25,11 @@ $(document).ready(function() {
         event.preventDefault();
         loadContent("home.html");
     });
+	
+	$('a.project').click(function(event) {
+        event.preventDefault();
+        loadContent("project.html");
+    });
 
     $('a.about').click(function(event) {
         event.preventDefault();
