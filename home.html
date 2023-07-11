@@ -5,20 +5,25 @@
         </div>
         <div class="card">
             <div class="card-body">
-                    <div id="typed-strings">
-                        <p>Hi, <em>Welcome to</em></p>
-                        <p>Rifanda Adam <strong>Official Site</strong>.</p>
-                    </div>
-                      <span id="typed"></span>
+                <div id="typed-strings">
+                    <p>Hi, <em>Welcome to</em></p>
+                    <p>Rifanda Adam <strong>Official Site</strong>.</p>
+                </div>
+                <span id="typed"></span>
             </div>
         </div>
+    </div>
+</div>
 
+<script src='js/typed.js'></script>
 <script>
-    var typed = new Typed('#typed', {
-    stringsElement: '#typed-strings',
-    loop: true,
-    typeSpeed: 50,
-    backSpeed: 20,
-    backDelay: 1000
-  });
+    document.addEventListener("DOMContentLoaded", function () {
+        var typed = new Typed('#typed', {
+            stringsElement: '#typed-strings',
+            loop: true,
+            typeSpeed: 50,
+            backSpeed: 20,
+            backDelay: 1000
+        });
+    });
 </script>
