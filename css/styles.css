@@ -129,6 +129,13 @@ body {
 	box-shadow: 2px 3px 0px 1px rgb(20, 20, 20);
 }
 
+.btn-green:hover {
+	color: black;
+	margin-top: 3px;
+	margin-bottom: -3px;
+	box-shadow: 2px 3px 0px 1px rgb(20, 20, 20);
+}
+
 .btn-orange:hover {
 	color: black;
 	margin-top: 3px;
