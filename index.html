@@ -54,25 +54,28 @@
    <div id="content"></div>
     <!-- footer -->
     <div class="custom-footer text-center">
-            <div class="col-12">
-                <a class="btn btn-pink mb-2" href="https://instagram.com/rifandaadam"><i class="fa fa-instagram"></i></a>
-                <a class="btn btn-white mb-2" href="https://github.com/rifandaadam"><i class="fa fa-github"></i></a>
-                <a class="btn btn-blue mb-2" href="https://rifandaadam.github.io"><i class="fa fa-globe"></i></a>
-                <p class="mt-2">© Rifanda Adam</p>
-            </div>
+        <div class="col-12">
+            <a class="btn btn-pink mb-2" href="https://instagram.com/rifandaadam"><i class="fa fa-instagram"></i></a>
+            <a class="btn btn-white mb-2" href="https://github.com/rifandaadam"><i class="fa fa-github"></i></a>
+            <a class="btn btn-blue mb-2" href="https://rifandaadam.github.io"><i class="fa fa-globe"></i></a>
+            <p class="mt-2">© Rifanda Adam</p>
+        </div>
     </div>
    
-</body>
-<!--Page loading animation when loading is complete-->
+    <!--Page loading animation when loading is complete-->
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+
+    <script src='jquery-2.2.4.min.js'></script>
+    <script src='js/typed.js'></script>
+    <script src='js/main.js'></script>
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js'></script>
+    
     <script>
         $(window).on("load", function(){
              $(".loader-wrapper").fadeOut("slow");
-        })
+        });
     </script>
-    </div>
-<script src='js/typed.js'></script>
-<script src='js/jquery-2.2.4.min.js'></script>
-<!-- <script src='js/jquery.easing.min.js'></script> -->
-<script src='js/main.js'></script>
-<script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js'></script>
+</body>
 </html>
