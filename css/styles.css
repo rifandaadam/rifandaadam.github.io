@@ -16,10 +16,9 @@ body {
   flex-direction: column;
 }
 
-/* Content */
 #content {
   flex: 1 0 auto;
-  padding-bottom: 60px; /* Footer height */
+  padding-bottom: 60px;
 }
 
 .nav-item {
@@ -57,12 +56,11 @@ body {
   margin-bottom: -1px;
 }
 
-/* Footer */
 .custom-footer {
   flex-shrink: 0;
   padding-top: 25px;
   width: 100%;
-  background-color: #f8f9fa; /* Add matching background color */
+  background-color: #f8f9fa;
 }
 
 @media screen and (min-width: 1200px) {
@@ -71,9 +69,29 @@ body {
   }
 }
 
-/* Rest of your existing styles remain unchanged */
-/* [Keep all your existing button styles, animations, etc. below] */
+/* Mobile Navbar Fixes */
+@media (max-width: 991.98px) {
+  .navbar-nav {
+    width: 100%;
+    padding: 10px;
+  }
 
+  .nav-item {
+    margin: 10px 0 !important;
+  }
+
+  .navbar-nav .btn-block {
+    width: 100%;
+    margin: 0 !important;
+    text-align: left;
+    padding: 12px 20px;
+  }
+
+  .navbar-collapse {
+    border-top: 3px solid black;
+    box-shadow: 7px 7px 0px 1px rgb(20 20 20);
+  }
+}
 
 /* button */
 
