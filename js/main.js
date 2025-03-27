@@ -47,5 +47,5 @@ $(document).ready(function() {
     });
 
     // Load home.html by default
-    loadContent("home.html");
+    loadContent("project.html");
 });
