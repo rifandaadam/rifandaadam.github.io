@@ -21,23 +21,32 @@
       <div class="container">
         <h3><i class="fa fa-mug-hot text-white m-2 pt-1"></i></h3>
         <a class="navbar-brand font-weight-bold home">Rifanda Adam</a>
-        <button class="navbar-toggler" type="button">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto mr-4">
             <li class="nav-item">
-              <a class="btn btn-green btn-block project" data-toggle="collapse" data-target=".navbar-collapse.show><i class="fa fa-camera"></i> Project</a>
+              <a class="btn btn-green btn-block project" data-toggle="collapse" data-target="#navbarSupportedContent">
+                <i class="fa fa-camera"></i> Project
+              </a>
             </li>
             <li class="nav-item">
-              <a class="btn btn-blue btn-block about" data-toggle="collapse" data-target=".navbar-collapse.show><i class="fa fa-user"></i> About</a>
+              <a class="btn btn-blue btn-block about" data-toggle="collapse" data-target="#navbarSupportedContent">
+                <i class="fa fa-user"></i> About
+              </a>
             </li>
             <li class="nav-item">
-              <a class="btn btn-orange btn-block skill" data-toggle="collapse" data-target=".navbar-collapse.show><i class="fa fa-file"></i> Skills</a>
+              <a class="btn btn-orange btn-block skill" data-toggle="collapse" data-target="#navbarSupportedContent">
+                <i class="fa fa-file"></i> Skills
+              </a>
             </li>
             <li class="nav-item">
-              <a class="btn btn-white btn-block contact" data-toggle="collapse" data-target=".navbar-collapse.show><i class="fa fa-phone"></i> Contact</a>
+              <a class="btn btn-white btn-block contact" data-toggle="collapse" data-target="#navbarSupportedContent">
+                <i class="fa fa-phone"></i> Contact
+              </a>
             </li>
           </ul>
         </div>
@@ -65,9 +74,21 @@
       </div>
     </footer>
 
-    <script src='js/typed.js'></script>
     <script src='js/jquery-3.6.0.min.js'></script>
-    <script src='js/main.js'></script>
     <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js'></script>
+    <script src='js/typed.js'></script>
+    <script src='js/main.js'></script>
+
+    <!-- Add this script for mobile menu auto-close -->
+    <script>
+      $(document).ready(function() {
+        // Close navbar when clicking on nav items
+        $('.navbar-nav>li>a').on('click', function(){
+          if($(window).width() < 992) { // Bootstrap's lg breakpoint
+            $('#navbarSupportedContent').collapse('hide');
+          }
+        });
+      });
+    </script>
   </body>
 </html>
